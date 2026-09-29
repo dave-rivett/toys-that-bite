@@ -204,6 +204,49 @@ main {
   border: 0;
 }
 
+/* ---------- News ---------- */
+
+.news-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.news-item {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem 1.75rem;
+}
+
+.news-item time {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.page-content .news-item h2 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+  color: var(--text);
+}
+
+.news-item p {
+  margin: 0 0 0.75rem;
+}
+
+.news-item p:last-child {
+  margin-bottom: 0;
+}
+
+.page-content .news-item .news-lead {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .page-content .sign-off {
   font-family: var(--font-display);
   font-size: 1.5rem;
@@ -326,6 +369,24 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem 1.25rem;
+}
+
+.social-list-left {
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.contact-email {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-email:hover,
+.contact-email:focus-visible {
+  color: var(--text);
 }
 
 .social-link {
