@@ -288,6 +288,67 @@ main {
   font-size: 0.95rem;
 }
 
+/* ---------- Press ---------- */
+
+.press-section {
+  padding: 0 0 5rem;
+}
+
+.press-section h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--accent);
+}
+
+.press-section h3 {
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  margin: 0.5rem 0 0;
+}
+
+.review-grid {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review blockquote {
+  flex: 1;
+  margin: 0;
+  padding: 1.25rem 1.25rem 1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+}
+
+.review blockquote p {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.review cite {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.review img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+
 .tour-widget {
   padding: 1.5rem 0 3rem;
 }
