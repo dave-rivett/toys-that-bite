@@ -1,4 +1,4 @@
-// Toys That Bite — site scripts
+// Toys That Bïte — site scripts
 
 document.addEventListener("DOMContentLoaded", () => {
   // Mobile nav toggle
