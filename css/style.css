@@ -355,6 +355,62 @@ main {
   pointer-events: none;
 }
 
+/* ---------- Mailing list ---------- */
+
+.mailing-list {
+  padding: 0 16px 4rem;
+}
+
+.hero-signup {
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: min(100% - 32px, 480px);
+  padding: 0;
+}
+
+@media (max-width: 820px) {
+  .hero-signup {
+    position: static;
+    transform: none;
+    width: auto;
+    padding: 1.5rem 16px 0;
+  }
+}
+
+.page-content .mailing-list {
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* Left-align the embedded signup form (it centres itself by default) */
+.page-content .mailing-list .inline-container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.page-content .mailing-list .text-center,
+.page-content .mailing-list .text-block,
+.page-content .mailing-list .mastfoot .inner {
+  text-align: left !important;
+}
+
+.page-content .mailing-list .form-container {
+  margin-left: 0;
+}
+
+.page-content .mailing-list .main-form,
+.page-content .mailing-list .emailoctopus-form [eo-form-fields-container] {
+  justify-content: flex-start;
+}
+
+.page-content .mailing-list .mastfoot,
+.page-content .mailing-list .mastfoot p {
+  margin-left: 0;
+}
+
 /* ---------- Social links ---------- */
 
 .socials {
